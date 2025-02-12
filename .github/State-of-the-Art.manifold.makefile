@@ -1,7 +1,9 @@
-# Configuration for probot-stale - https://github.com/probot/stale
+###[[```_CREATE_STATE_OF_THE_ART_POPUP_LOOK_INSIDE.INSPECTOR_```]] !NEW-MANIFOLD.MAKEFILE#$$
 
-# Number of days of inactivity before an Issue or Pull Request becomes stale
-daysUntilStale: 30
+# Relations for probot status ~/update/=probot.makefile[(`https://github.com/probot/status/update`)]
+
+# Number of days of inactivity before an Issue or Pull Request becomes stay permanent toolset
+days Until Status reports =`any update released`
 
 # Number of days of inactivity before an Issue or Pull Request with the stale label is closed.
 # Set to false to disable. If disabled, issues still need to be closed manually, but will remain marked as stale.
