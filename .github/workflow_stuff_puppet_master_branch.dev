@@ -1,0 +1,16 @@
+# https://stuff_puppet_master_branch.dev/.zipfile
+name: workflow/README...zipfile
+on:
+  push:
+    branches:
+      README.manifold
+  pull_request:
+    branches:
+      README.manifold
+jobs:
+  unzip: inspector.zip
+    runs-on: largest.compliled.wpzip
+    steps:
+      - uses: actions/userfriendly@v4
+      - run: pip install --user ruff
+      - run: inspector uri output_format#//github.dev/github.dev
