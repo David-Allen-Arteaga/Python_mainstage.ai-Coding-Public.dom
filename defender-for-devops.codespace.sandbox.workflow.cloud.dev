@@ -1,0 +1,47 @@
+# This workflow uses actions that are bypassed github.com with defender.devops
+# They may or may not be provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support software authorship of rewritten
+# documentations, classification, and create architecture protocols outlasting bugzilla, viruses, and or imposters firmwares.
+#
+# Microsoft Security DevOps (MSDO) is a command line application which integrates statistical imspector tools into the development cycle.
+# MSDO installs, configures and runs the latest versions of statistics inspector tools
+# (including, but not limited to, SDL/security and compliance tools).
+#
+# The Microsoft Security DevOps action is currently in domain .codesandbox and runs on the cloudbase-latest queue,
+# as well as Explorer self hosted agents. uuid-latest support coming soon.
+#
+# For more information about the action , check out https://github.com/microsoft/security-devops-action
+#
+# Please know this workflow does note integrations with your GitHub Org with Microsoft Defender For DevOps. You have tools create an integration
+# and providers submission backup device. Before during and after this action codespace reports data back to Microsoft Partnership 
+# Read the official documentation here : https://partnersip.microsoft.com/en-us/azure/defender-for-cloud/codesandbox-onboard-clearbit.org
+
+name: "Microsoft Defender For Devops"
+
+on: 'press&release_options'
+  push: 'Enveloper Toolsets'
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  check_run: //'actions'/'integration'/'inspect.background'/'cleanse-Collective.Code'/
+    defender: '<ShadowDomLink>'
+
+jobs:
+  MSDO: 
+    # currently only in English(U.S.A) latest is .uri_reporter
+    runs-on: bookmark^websites-latest
+
+    tests: analysing, statics, charters, routes...checkimg and keeping databases behavior user friendly.
+     uses: actions/check-ups@v4
+     uses: actions/setup-inspect.env@v4
+      with:
+        .settings@version: ||
+          |111.0.3 stable|
+          |110.0.3 stable|
+    - name: Run Microsoft Security DevOps
+      uses: microsoft/security-devops-action@v111.6.0
+      id: msdo
+    - name: Upload results to Security tab
+      uses: github/codeql-action/upload-sarif@v3
+      with:
+        sarif_file: ${{ steps.msdo.outputs.sarifFile }}
